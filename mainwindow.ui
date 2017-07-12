@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="5" rowspan="6" colspan="3">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>322</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <widget class="QPlainTextEdit" name="plainTextEdit_info">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>311</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="3" rowspan="12">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="6" colspan="3">
+     <widget class="QScrollArea" name="scrollArea_image">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>243</width>
+         <height>181</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="6" column="7">
+     <widget class="QPushButton" name="pushButton_load">
+      <property name="text">
+       <string>LOAD</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QCheckBox" name="checkBox_preview">
+      <property name="text">
+       <string>Preview</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="3">
+     <widget class="QLabel" name="label_text">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="pushButton_minus">
+      <property name="text">
+       <string>MINUS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="pushButton_plus">
+      <property name="text">
+       <string>PLUS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5" colspan="2">
+     <widget class="QPushButton" name="pushButton_select">
+      <property name="text">
+       <string>SELECT IMAGE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="6" colspan="2">
+     <widget class="QPushButton" name="pushButton_decimate">
+      <property name="text">
+       <string>DECIMATE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="5" colspan="3">
+     <widget class="QPushButton" name="pushButton_restore">
+      <property name="text">
+       <string>RESTORE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_decimate">
+      <property name="singleStep">
+       <double>0.010000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QSpinBox" name="spinBox_steps">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>NUM OF WAVELET STEPS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="5" colspan="3">
+     <widget class="QPushButton" name="pushButton_process">
+      <property name="text">
+       <string>PROCESS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="5">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_antinoise">
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="5">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_hfdivision">
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>4.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>2.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="6" colspan="2">
+     <widget class="QPushButton" name="pushButton_antinoise">
+      <property name="text">
+       <string>ANTI-NOISE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="6" colspan="2">
+     <widget class="QPushButton" name="pushButton_hfdivision">
+      <property name="text">
+       <string>HF DIVISION</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="5" colspan="3">
+     <widget class="QPushButton" name="pushButton_lhtonulls">
+      <property name="text">
+       <string>LH TO NULLS</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>602</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
